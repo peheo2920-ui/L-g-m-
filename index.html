@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LTHONGGAM_YT - Trang cá nhân</title>
+    <style>
+        :root {
+            --primary-pink: #ffb6c1;
+            --darker-pink: #ff69b4;
+            --soft-bg: #ffd1dc;
+            --white: #ffffff;
+            --shadow: 0 8px 15px rgba(255, 105, 180, 0.2);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--soft-bg);
+            margin: 0;
+            padding: 20px;
+            color: #555;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            padding: 25px;
+            box-shadow: var(--shadow);
+            min-height: 80vh;
+        }
+
+        h1, h2 { color: var(--darker-pink); text-align: center; }
+
+        .btn {
+            display: block;
+            background: var(--darker-pink);
+            color: var(--white);
+            text-align: center;
+            padding: 15px;
+            border-radius: 50px;
+            text-decoration: none;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 15px;
+            border-radius: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+
+<div id="app" class="container">
+    <div id="page1">
+        <div style="display: flex; justify-content: space-between;">
+            <strong>LTHONGGAM_YT</strong>
+            <button onclick="showPage('page2')">☰</button>
+        </div>
+        <div class="card" style="text-align: center; margin-top: 20px;">Welcome to my website.</div>
+        <h1>Hi EVERYONE, MY FULL NAME ♥ LÊ THỊ HỒNG GẤM ♥</h1>
+        <p>Là 1 học sinh lớp 12 đam mê Kinh tế, Tiếng Anh, Ngữ văn và yêu thích Công nghệ thông tin. Luôn tìm tòi những phương pháp học thông minh, hiện đại và ứng dụng công nghệ để phát triển bản thân mỗi ngày.</p>
+        <p>Đây là một nền tảng học tập cá nhân do mình xây dựng – nơi bạn có thể trò chuyện trực tiếp, nhận tài liệu phù hợp và được hỗ trợ tìm ra cách học hiệu quả hơn cho riêng mình.</p>
+        <a href="#" class="btn" onclick="showPage('page4')">Liên hệ ngay</a>
+    </div>
+
+    </div>
+
+<script>
+    function showPage(pageId) {
+        // Logic điều hướng giữa các trang (Page 1, 2, 3, 4)
+        const app = document.getElementById('app');
+        // Ở đây bạn có thể thêm logic render nội dung HTML tương ứng với từng ID trang
+        console.log("Chuyển đến trang: " + pageId);
+    }
+</script>
+</body>
+</html>
